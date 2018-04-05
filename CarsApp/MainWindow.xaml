@@ -1,0 +1,89 @@
+﻿<Window x:Class="CarsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <GroupBox x:Name="grpAuth"
+                  Grid.Row="0"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="2"
+                  Header="Auth"
+                  Margin="5 0">
+            <StackPanel>
+                <Grid x:Name="grdLogin">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="lbLogin" Grid.Row="0" Grid.Column="0" Margin="0 0" Content="Login"/>
+                    <Label x:Name="lbPassword" Grid.Row="0" Grid.Column="1" Margin="0 0" Content="Password"/>
+                    <TextBox x:Name="tbLogin" Grid.Row="1" Grid.Column="0" Margin="0 0 2 0"/>
+                    <TextBox x:Name="tbPassword" Grid.Row="1" Grid.Column="1" Margin="2 0"/>
+                    <Button x:Name="btnLogin" Grid.Row="1" Grid.Column="2" Margin="2 0" Content="Log in" Click="btnLogin_Click" />
+                    <Button x:Name="btnSignup" Grid.Row="1" Grid.Column="3" Margin="2 0" Content="Sign Up" Click="btnSignup_Click" />
+                </Grid>
+                
+                <Grid x:Name="grdLogout">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="lbUsername" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Content="Username:"/>
+                    <Button x:Name="btnLogout" Grid.Row="0" Grid.Column="3" Margin="2 0" Content="Log out" Click="btnLogout_Click" />
+
+                </Grid>
+            </StackPanel>
+
+        </GroupBox>
+        
+        <GroupBox x:Name="grpCar"
+                  Grid.Row="1"
+                  Grid.Column="0"
+                  Header="Car"
+                  Margin="5 0">
+            <StackPanel Orientation="Vertical"
+                        Width="150px">
+                <Label x:Name="lbCarModel" Content="Model"/>
+                <TextBox x:Name="tbCarModel" Margin="0 0 0 5"/>
+                
+                <Label x:Name="lbCarYear" Content="Year"/>
+                <TextBox x:Name="tbCarYear" Margin="0 0 0 5"/>
+                
+                <Label x:Name="lbCarPrice" Content="Price"/>
+                <TextBox x:Name="tbCarPrice" Margin="0 0 0 5"/>
+                
+                <Button x:Name="btnCarAdd" Content="Add" Click="btnCarAdd_Click" />
+            </StackPanel>
+        </GroupBox>
+        
+        <GroupBox x:Name="grpCarslist"
+                  Grid.Row="1"
+                  Grid.Column="2"
+                  Header="Cars list"
+                  Margin="5 0">
+            <ListBox x:Name="lstCarsList" />
+        </GroupBox>
+    </Grid>
+</Window>

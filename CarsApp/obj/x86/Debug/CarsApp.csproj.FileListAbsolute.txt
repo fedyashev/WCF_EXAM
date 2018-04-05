@@ -1,0 +1,11 @@
+C:\workspace\WCF\WCF_EXAM\CarsApp\bin\Debug\CarsApp.exe
+C:\workspace\WCF\WCF_EXAM\CarsApp\bin\Debug\CarsApp.pdb
+C:\workspace\WCF\WCF_EXAM\CarsApp\obj\x86\Debug\MainWindow.baml
+C:\workspace\WCF\WCF_EXAM\CarsApp\obj\x86\Debug\MainWindow.g.cs
+C:\workspace\WCF\WCF_EXAM\CarsApp\obj\x86\Debug\App.g.cs
+C:\workspace\WCF\WCF_EXAM\CarsApp\obj\x86\Debug\CarsApp_MarkupCompile.cache
+C:\workspace\WCF\WCF_EXAM\CarsApp\obj\x86\Debug\CarsApp.g.resources
+C:\workspace\WCF\WCF_EXAM\CarsApp\obj\x86\Debug\CarsApp.Properties.Resources.resources
+C:\workspace\WCF\WCF_EXAM\CarsApp\obj\x86\Debug\CarsApp.csproj.GenerateResource.Cache
+C:\workspace\WCF\WCF_EXAM\CarsApp\obj\x86\Debug\CarsApp.exe
+C:\workspace\WCF\WCF_EXAM\CarsApp\obj\x86\Debug\CarsApp.pdb
